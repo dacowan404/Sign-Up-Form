@@ -1,11 +1,69 @@
+:root {
+  --colorBlue : rgba(65,125,169,255);
+}
+
 .container {
   width: 100%;
   height: 100%;
   display: flex;
 }
 
+img {
+  max-height: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.img-bot, .img-top {
+  position:absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.img-top {
+  opacity: 50%;
+  top: 10%;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.img-bot {
+  background-color: darkgrey;
+  opacity: 70%;
+  bottom: 1%;
+  text-align: center;
+  color: var(--colorBlue);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 form {
+  width: 100%;
+}
+
+.form-container {
   display: flex;
+}
+
+.form-outer {
+  box-shadow: 0px 2px 2px 1px black;
+  background-color:aliceblue;
+  padding: 2% 5%;
+}
+
+button {
+  margin: 2% 5% 0% 5%;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: var(--colorBlue);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+label {
+  display:block;
 }
 
 .img {
@@ -14,7 +72,8 @@ form {
 }
 
 .col-4 {
-  width: 40%;
+  width: 38%;
+  position: relative;
 }
 
 .col-5 {
@@ -22,6 +81,20 @@ form {
 }
 
 .col-6 {
-  width: 60%;
+  width: 62%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 }
 
+.right-text {
+  margin: 5%;
+}
+
+.form-text {
+  margin-bottom: 2%;
+}
+
+.big {
+  font-size: 2rem;
+}
